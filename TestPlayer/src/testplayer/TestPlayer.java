@@ -11,9 +11,6 @@ package testplayer;
  */
 public class TestPlayer {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) 
     {
     BaseballPlayer aCatcher = new BaseballPlayer(12, .218);

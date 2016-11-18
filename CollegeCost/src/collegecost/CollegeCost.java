@@ -4,18 +4,25 @@
  * IS 4415
  */
 package collegecost;
-
-/**
- *
- * @author Admin
- */
+import java.util.Scanner;
 public class CollegeCost {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) 
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("How old is your child? >> ");
+        int childAge = keyboard.nextInt();
+        
+        if(childAge > 18)
+        {
+            System.out.println("Your child's age must be less than 18 >> ");
+        }
+        else
+        {
+            int ageDifference = 18 - childAge;
+            int calculateSavings = ageDifference * 5000;
+            System.out.println("You will need to save " + calculateSavings + " for your child's college education.");
+        }
     }
     
 }

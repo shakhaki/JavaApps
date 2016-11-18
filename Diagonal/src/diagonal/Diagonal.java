@@ -19,9 +19,8 @@ public class Diagonal {
         for(int x = 0; x < i; x++)
         {
                 System.out.print(" ");
-        }   
-        //for 
-        }
+        }// end of nested for loop
+        }//end for loop
     }    
     
 }
