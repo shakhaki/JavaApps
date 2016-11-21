@@ -5,10 +5,6 @@
  */
 package arrayex;
 
-/**
- *
- * @author Admin
- */
 public class Arrayex {
 
     /**

@@ -7,9 +7,6 @@ import java.util.Scanner;
 public class CountSpaces2
 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args)
     {
        String aString;
