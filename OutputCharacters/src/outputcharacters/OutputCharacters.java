@@ -48,7 +48,7 @@ public class OutputCharacters
                     break;
                 }
             }
-        }//cl
+        }//
         
         StringBuilder output = new StringBuilder();
         // Use array to create output string showing the matches
@@ -62,7 +62,7 @@ public class OutputCharacters
             
             output.append(" is the only matching character.");
         }
-        else
+        /*else
         {
             output.append("Matching chars are the following boo yah: ");
             for (int i = 0; i < matchingCharCount; i++)
@@ -80,7 +80,7 @@ public class OutputCharacters
                 
             }
         }
-        
+        */
         System.out.println(output);
     }
     

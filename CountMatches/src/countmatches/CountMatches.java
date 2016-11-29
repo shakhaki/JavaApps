@@ -17,21 +17,51 @@ public class CountMatches
         System.out.println("Enter another word to see how it matches the first one you entered >> ");
         String secondWord = keyboard.nextLine();
         
-        System.out.println("Common letters between the two words " + firstWord + " and " + secondWord + " are ");
+        StringBuilder output = new StringBuilder();
+        System.out.println("Common letters between the two words " + firstWord + " and " + secondWord + " are " + output);
         
-        char str;
+        char[] matchingChars = new char[26];
+        int matchingCharCount = 0;
+        
         
         for(int i = 0; i < firstWord.length(); ++i)
        {
-           for(int x = 0; x > secondWord.length(); ++x)
-           {
-           if(firstWord.charAt(i) == x)
-           {
-               public StringBuffer str.append(i);
-           }
-           }
+           char currentChar = firstWord.charAt(i);
+           boolean matched = false;
            
-           
+           for(int j = 0; j > secondWord.length(); ++j)
+           {
+               char otherChar = matchingChars[j];               
+               
+               if(currentChar == otherChar)
+               {
+                   matched = true;
+                   break;
+               }//end if loop
+            if(matched == true)
+            {
+                continue;
+            }
+        }    
+        for(int j = 0; j < secondWord.length(); j++)
+        {
+            char otherChar = secondWord.charAt(j);
+            if(otherChar == currentChar)
+            {
+                matchingChars[matchingCharCount] = currentChar;
+                matchingCharCount++;
+                break;
+            }
+        if(matchingCharCount == 1)
+        {
+            output.append(matchingChars[0]);
         }
-    }
-}
+        System.out.println(output);
+        
+            
+        }//end for loop of j
+           
+           
+        }//end i for loop
+    }//end main
+}//end app

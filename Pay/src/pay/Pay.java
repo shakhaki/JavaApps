@@ -55,7 +55,7 @@ public class Pay
            if(medOption == 1)
            {
                medical = MEDINS;
-           entry = JOptionPane.showInputDialog(null, "Do you want the dental insureance?\n" +
+           entry = JOptionPane.showInputDialog(null, "Do you want the dental insurance?\n" +
                    "    Enter 1 for Yes and 2 for No.");
            disOption = Integer.parseInt(entry);
            }
@@ -76,11 +76,11 @@ public class Pay
         message = "Net Pay is: ";           
         if(totalDeductions > totalPay)
         {
-            message = message + "\n Deductions exceed gross pay");
+            message = message + "\n Deductions exceed gross pay";
         }
         else
         {
-            message = message + "\nNet pay is................." + (totalPay - totalDeductions);
+            message = message + (totalPay - totalDeductions); //+ "\nNet pay is................." + 
             JOptionPane.showMessageDialog(null, message);
         }
         

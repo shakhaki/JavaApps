@@ -6,11 +6,10 @@ package scholarship;
 import java.util.Scanner;
 public class Scholarship {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) 
     {
+        ScholarshipCalculation();
+        
         System.out.println("**WELCOME TO THE SCHOLARSHIP CANDIDATE SYSTEM!**");
         System.out.println("What is your GPA? ");
         System.out.println("How many extracurricular activities are you in? ");
