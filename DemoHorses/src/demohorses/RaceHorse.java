@@ -4,10 +4,6 @@
  */
 package demohorses;
 
-/**
- *
- * @author Admin
- */
 public class RaceHorse extends Horses 
 {
     private int races;

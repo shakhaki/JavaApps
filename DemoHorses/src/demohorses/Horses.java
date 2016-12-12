@@ -9,6 +9,7 @@ public class Horses
     private String name;
     private String color;
     private int birthYear;
+    
     public String getName()
     {
         return name;
